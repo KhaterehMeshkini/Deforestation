@@ -6,7 +6,7 @@ domain: generic
 
 ## Deforestration 
 
-This repository contains a Python implementation for forest detction analysis on satellite imagery data. The script processes NDVI and BSI data, performs interpolation, and detects change events using BFAST.
+This repository contains a Python implementation for deforestation detction analysis on satellite imagery data. The script processes NDVI and BSI data, performs interpolation, and detects change events using BFAST.
 
 ## Features
 - Parallel processing for efficiency
@@ -15,11 +15,11 @@ This repository contains a Python implementation for forest detction analysis on
 - Change detection using BFAST
 
 ## Usage
-Tool usage documentation here.
+Tool usage documentation /docs/usage.md.
 
 ## Setup
   
-git clone https://github.com/yourusername/forest_detection.git  
+git clone https://github.com/yourusername/Deforestation.git  
 
 cd forest_detection
 
