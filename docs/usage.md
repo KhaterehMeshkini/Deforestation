@@ -20,7 +20,7 @@ Band 2: Probability of change.Deforestation Usage
 
 ## Setup
   
-git clone https://github.com/yourusername/forest_detection.git  
+git clone https://github.com/yourusername/Deforestration.git  
 
 cd forest_detection
 
