@@ -9,7 +9,8 @@ Implements parallel processing for computational efficiency.
 Interpolates missing monthly data for NDVI and BSI, ensuring a complete time series.
 Averages values if multiple samples exist within a month.
 Skips interpolation if sufficient monthly data is available.
-# Index Fusion: Merges NDVI and BSI into a single fused dataset using their root mean square.
+# Index Fusion: 
+Merges NDVI and BSI into a single fused dataset using their root mean square.
 # Change Detection:
 Uses the BFAST (Breaks for Additive Season and Trend) algorithm to identify and analyze significant change events.
 Outputs a change map:
