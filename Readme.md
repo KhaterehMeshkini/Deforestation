@@ -20,8 +20,7 @@ Tool usage documentation https://github.com/KhaterehMeshkini/Deforestation/blob/
 ## Setup
   
 git clone https://github.com/yourusername/Deforestation.git  
-
-cd forest_detection
+cd Deforestation
 
 pip install -r requirements.txt
 
