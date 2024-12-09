@@ -15,7 +15,7 @@ This repository contains a Python implementation for deforestation detction anal
 - Change detection using BFAST
 
 ## Usage
-Tool usage documentation /docs/usage.md.
+Tool usage documentation https://github.com/KhaterehMeshkini/Deforestation/blob/master/docs/usage.md
 
 ## Setup
   
