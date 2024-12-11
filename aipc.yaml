@@ -16,7 +16,7 @@ ai: remote-sensing
 domain: generic
 usages: ./docs/usage.md
 howto:
-  - title: Download Sentinel data
+  - title: Deeforestation
     ref: ./docs/howto/download.md
   - title: Process Sentinel data
     ref: ./docs/howto/download-process.md
