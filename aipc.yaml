@@ -17,11 +17,7 @@ domain: generic
 usages: ./docs/usage.md
 howto:
   - title: Deforestation
-    ref: ./docs/howto/chnage-detection.md
-  - title: Process data
-    ref: ./docs/howto/process.md
-  - title: Build docker image
-    ref: ./docs/howto/build-image.md
+    ref: ./docs/howto/Deforestation.md
 datasets:
   - id:  Feature data
     name: Feature data
