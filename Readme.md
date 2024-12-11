@@ -18,12 +18,11 @@ This repository contains a Python implementation for deforestation detection on 
 Tool usage documentation https://github.com/KhaterehMeshkini/Deforestation/blob/master/docs/usage.md
 
 ## Setup
-  
+```bash 
 git clone https://github.com/yourusername/Deforestation.git  
 cd Deforestation
-```ini
 pip install -r requirements.txt
-```ini
+```
 ## Configuration File (config.ini)
 
 
