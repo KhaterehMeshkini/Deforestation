@@ -3,7 +3,7 @@ name: Forest Detection
 description: Tools for deteting deforestation
 version: 1.0
 kind: component
-tags: remote-sensing, sentinel, chnage detection
+tags: remote-sensing, sentinel, change detection
 license: 
   name: Apache License 2.0
   ref: ./LICENSE
@@ -15,14 +15,20 @@ problems:
 ai: remote-sensing
 domain: generic
 usages: ./docs/usage.md
-
+howto:
+  - title: Download Sentinel data
+    ref: ./docs/howto/download.md
+  - title: Process Sentinel data
+    ref: ./docs/howto/download-process.md
+  - title: Build docker image
+    ref: ./docs/howto/build-image.md
 datasets:
-  - id: Deforestation
+  - id: sentinel-data
     name: Sentinel data
     kind: artifact
 operations:
-  - id: change detection
-    name: Process feature data
+  - id: donwload_images
+    name: Download Sentinel images
     kind: job
     task: processing
     implementation:
@@ -31,5 +37,4 @@ operations:
         kind: container 
         image: 
     outputs:
-      - The year of chnage
-      - The probability of change
+      - sentinel-data

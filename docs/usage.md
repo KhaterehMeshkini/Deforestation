@@ -14,21 +14,19 @@ Merges NDVI and BSI into a single fused dataset using their root mean square.
 # Change Detection:
 Uses the BFAST (Breaks for Additive Season and Trend) algorithm to identify and analyze significant change events.
 Outputs a change map:
-Band 1: Year of change detected.
-Band 2: Probability of change.Deforestation Usage
+Band 1: Year of change detected.  
+Band 2: Probability of change.
 
 
 ## Setup
   
-git clone https://github.com/yourusername/forest_detection.git  
+git clone https://github.com/yourusername/Deforestration.git  
 
 cd forest_detection
 
 pip install -r requirements.txt
 
 ## Configuration File (config.ini)
-
-
 
 The code requires a config.ini file to specify the parameters for analysis. Below are the details of each section:  
 '''
@@ -64,4 +62,3 @@ Run the Script
 Use the following command to execute the tool:
 '''
 python main.py -c config.ini
-'''
