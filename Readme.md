@@ -28,7 +28,7 @@ pip install -r requirements.txt
 
 
 The code requires a config.ini file to specify the parameters for analysis. Below are the details of each section:  
-'''
+```ini
 [GENERAL]  
 
 start_year:	The first year of the time series.  
@@ -51,4 +51,4 @@ mask_path	Path to the mask GeoTIFF file.	/path/to/mask_file.tif
 [OUTPUT]  
 
 output_directory:	Directory to save output files.	/path/to/output
-'''
+
