@@ -1,8 +1,3 @@
-AIPC  
-kind: component  
-ai: remote sensing  
-domain: generic 
-
 
 ## Deforestration 
 
@@ -27,7 +22,7 @@ pip install -r requirements.txt
 
 
 The code requires a config.ini file to specify the parameters for analysis. Below are the details of each section: 
- 
+
 ```ini
 [GENERAL]  
 
