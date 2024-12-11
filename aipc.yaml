@@ -12,6 +12,11 @@ problems:
   - forest detection
   - deforestation
   - damage analysis
+
+ai: remote-sensing
+domain: generic
+usages: ./docs/usage.md 
+ 
 dependencies:  
   python:
     - backports.statistics==0.1.0
@@ -45,11 +50,6 @@ workflow:
   - Step 4: Interpolate the fuse features (if needed)
   - Step 5: Process the time series to detect the break point
   - Step 6: Save the results (GeoTiff) 
-
-
-ai: remote-sensing
-domain: generic
-usages: ./docs/usage.md
 
   outputs:
     - The year of change
