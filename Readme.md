@@ -27,17 +27,18 @@ pip install -r requirements.txt
 
 ## Configuration File (config.ini)
 
-[GENERAL]  
 
 The code requires a config.ini file to specify the parameters for analysis. Below are the details of each section:  
+'''
+[GENERAL]  
 
-start_year:	The first year of the time series. example 2018  
+start_year:	The first year of the time series.  
 
-end_year:	The last year of the time series.	example 2019  
+end_year:	The last year of the time series.	  
 
-freq:	Temporal frequency (e.g., monthly = 12).	example 12  
+freq:	Temporal frequency (e.g., monthly = 12).	
 
-verbosity:	Logging verbosity level (0, 1, 2).	example 1
+verbosity:	Logging verbosity level (0, 1, 2).	
 
 [INPUT]  
 
@@ -51,4 +52,4 @@ mask_path	Path to the mask GeoTIFF file.	/path/to/mask_file.tif
 [OUTPUT]  
 
 output_directory:	Directory to save output files.	/path/to/output
-
+'''

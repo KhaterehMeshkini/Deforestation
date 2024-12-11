@@ -9,7 +9,8 @@ Implements parallel processing for computational efficiency.
 Interpolates missing monthly data for NDVI and BSI, ensuring a complete time series.
 Averages values if multiple samples exist within a month.
 Skips interpolation if sufficient monthly data is available.
-# Index Fusion: Merges NDVI and BSI into a single fused dataset using their root mean square.
+# Index Fusion: 
+Merges NDVI and BSI into a single fused dataset using their root mean square.
 # Change Detection:
 Uses the BFAST (Breaks for Additive Season and Trend) algorithm to identify and analyze significant change events.
 Outputs a change map:
@@ -27,9 +28,11 @@ pip install -r requirements.txt
 
 ## Configuration File (config.ini)
 
-[GENERAL]  
+
 
 The code requires a config.ini file to specify the parameters for analysis. Below are the details of each section:  
+'''
+[GENERAL]  
 
 start_year:	The first year of the time series. example 2018  
 
@@ -51,7 +54,7 @@ mask_path	Path to the mask GeoTIFF file.	/path/to/mask_file.tif
 [OUTPUT]  
 
 output_directory:	Directory to save output files.	/path/to/output
-
+'''
 ## USAGE
 
 Set up the config.ini file
@@ -59,4 +62,6 @@ Update the configuration file with appropriate paths and parameters.
 
 Run the Script
 Use the following command to execute the tool:
+'''
 python main.py -c config.ini
+'''
