@@ -26,7 +26,8 @@ pip install -r requirements.txt
 ## Configuration File (config.ini)
 
 
-The code requires a config.ini file to specify the parameters for analysis. Below are the details of each section:  
+The code requires a config.ini file to specify the parameters for analysis. Below are the details of each section: 
+ 
 ```ini
 [GENERAL]  
 
