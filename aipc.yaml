@@ -1,9 +1,10 @@
-id: https://github.com/tn-aixpa/forest-detection
-name: Forest Detection
+id: https://github.com/KhaterehMeshkini/Deforestation
+name: Deforestation
 description: Tools for deteting deforestation
 version: 1.0
 kind: component
 tags: remote-sensing, sentinel, change detection
+author: KhaterehMeshkini@FBK
 license: 
   name: Apache License 2.0
   ref: ./LICENSE
@@ -11,30 +12,45 @@ problems:
   - forest detection
   - deforestation
   - damage analysis
+dependencies:  
+  python:
+    - backports.statistics==0.1.0
+    - bfast==0.6
+    - GDAL==3.0.1
+    - h5py==3.1.0
+    - imageio==2.15.0
+    - joblib==1.1.1
+    - libs==0.0.10
+    - matplotlib==3.3.4
+    - numpy==1.19.2
+    - osgeo==0.0.1
+    - pandas==1.1.5
+    - rasterio==1.2.10
+    - ruptures==1.1.9
+    - scikit_image==0.17.2
+    - scipy==1.5.2
+    - skimage==0.0
+    - statsmodels==0.12.2
+    - wget==3.2
+  
+  datasets:
+    - NDVI
+    - BSI
+    - Schianti
+
+workflow:
+  - Step 1: Load NDVI and BSI features
+  - Step 2: Load Schianti mask
+  - Step 3: Fuse the features 
+  - Step 4: Interpolate the fuse features (if needed)
+  - Step 5: Process the time series to detect the break point
+  - Step 6: Save the results (GeoTiff) 
+
 
 ai: remote-sensing
 domain: generic
 usages: ./docs/usage.md
-howto:
-  - title: Download Sentinel data
-    ref: ./docs/howto/download.md
-  - title: Process Sentinel data
-    ref: ./docs/howto/download-process.md
-  - title: Build docker image
-    ref: ./docs/howto/build-image.md
-datasets:
-  - id: sentinel-data
-    name: Sentinel data
-    kind: artifact
-operations:
-  - id: donwload_images
-    name: Download Sentinel images
-    kind: job
-    task: processing
-    implementation:
-      framework: 
-      spec:
-        kind: container 
-        image: 
-    outputs:
-      - sentinel-data
+
+  outputs:
+    - The year of change
+    - The probability of change
