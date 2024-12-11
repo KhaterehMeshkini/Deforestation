@@ -21,9 +21,9 @@ Tool usage documentation https://github.com/KhaterehMeshkini/Deforestation/blob/
   
 git clone https://github.com/yourusername/Deforestation.git  
 cd Deforestation
-
+```ini
 pip install -r requirements.txt
-
+```ini
 ## Configuration File (config.ini)
 
 
