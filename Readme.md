@@ -1,5 +1,5 @@
 
-## Deforestration 
+## Deforestation 
 
 This repository contains a Python implementation for deforestation detection on satellite imagery data. The script processes NDVI and BSI data, performs interpolation, and detects change events using BFAST.
 
