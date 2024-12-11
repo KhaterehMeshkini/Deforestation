@@ -15,7 +15,7 @@ Merges NDVI and BSI into a single fused dataset using their root mean square.
 Uses the BFAST (Breaks for Additive Season and Trend) algorithm to identify and analyze significant change events.
 Outputs a change map:
 Band 1: Year of change detected.  
-Band 2: Probability of change.Deforestation Usage
+Band 2: Probability of change.
 
 
 ## Setup
