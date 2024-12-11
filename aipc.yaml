@@ -15,9 +15,6 @@ problems:
 ai: remote-sensing
 domain: generic
 usages: ./docs/usage.md
-howto:
-  - title: Deforestation
-    ref: ./docs/howto/Deforestation.md
 datasets:
   - id:  Feature data
     name: Feature data
